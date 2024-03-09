@@ -15,7 +15,7 @@ spring:
           clone-on-start: true
           username: ${GIT_USER}
           password: ${GIT_PASS}
-          try-master-branch: true
+          default-label: master
 
 eureka:
   server:
