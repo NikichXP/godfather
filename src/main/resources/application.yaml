@@ -2,6 +2,10 @@ server:
   port: 8761
 
 spring:
+  security:
+    user:
+      name: ${USER}
+      password: ${PASSWORD}
   cloud:
     config:
       server:
@@ -11,6 +15,7 @@ spring:
           clone-on-start: true
           username: ${GIT_USER}
           password: ${GIT_PASS}
+          try-master-branch: true
 
 eureka:
   server:
