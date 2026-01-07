@@ -34,3 +34,5 @@ jobs:
             ${{ secrets.REGISTRY_DOMAIN }}/godfather:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          provenance: false
+          sbom: false
